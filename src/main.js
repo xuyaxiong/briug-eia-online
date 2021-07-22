@@ -4,9 +4,14 @@ import router from './router'
 import store from './store'
 import ElementPlus from 'element-plus'
 import 'element-plus/lib/theme-chalk/index.css'
+import Request from './plugins/request'
 
-createApp(App)
+const app = createApp(App)
   .use(ElementPlus)
   .use(store)
   .use(router)
-  .mount('#app')
+  .use(Request)
+
+app.config.globalProperties.$store = store
+
+app.mount('#app')

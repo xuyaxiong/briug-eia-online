@@ -31,7 +31,7 @@ export default {
       console.log('账号：', this.account)
       console.log('密码：', this.password)
       this.saveAccountToLocal()
-      // this.$router.push('/')
+      this.$router.push('dashboard')
     },
     saveAccountToLocal() {
       localStorage.setItem('account', this.account)
