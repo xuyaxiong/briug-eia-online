@@ -11,6 +11,7 @@
     </div>
     <div class="right">
       <head-bar v-bind="userInfo"></head-bar>
+      <nav-label />
       <router-view />
     </div>
   </div>
@@ -20,11 +21,13 @@
 import HeadBar from '../components/HeadBar.vue'
 import Loading from '../components/Loading.vue'
 import Menu from '../components/Menu.vue'
+import NavLabel from '../components/NavLabel.vue'
 export default {
   components: {
     HeadBar,
     Menu,
-    Loading
+    Loading,
+    NavLabel
   },
   data() {
     return {
@@ -40,6 +43,10 @@ export default {
 <style lang="stylus" scoped>
 .page
   display flex
+
 .left
-  width 200px
+  width 250px
+
+.right
+  width 100%
 </style>

@@ -54,7 +54,6 @@ export default {
 <style lang="stylus" scoped>
 .login-area
   width 400px
-.login-area
   margin-top 20px
 .el-button
   width 100%

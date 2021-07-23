@@ -12,6 +12,4 @@ const app = createApp(App)
   .use(router)
   .use(Request)
 
-app.config.globalProperties.$store = store
-
 app.mount('#app')
