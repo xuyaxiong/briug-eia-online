@@ -6,10 +6,10 @@
 
 <template>
   <div class="head-bar">
-    <h1>{{ title }}</h1>
+    <h1 class="title">{{ title }}</h1>
     <div class="user-area">
       <el-image class="avatar" :src="avatar" />
-      <span>{{ userName }}</span>
+      <span class="user-name">{{ userName }}</span>
     </div>
   </div>
 </template>
@@ -38,15 +38,20 @@ export default {
 
 <style lang="stylus" scoped>
 .head-bar
+  height 60px
   display flex
   justify-content center
   align-items center
+  background-color #438eb9
 .user-area
   display flex
   align-items center
   position fixed
-  right 0
+  right 30px
 .avatar
-  width 60px
-  height 60px
+  width 50px
+  height 50px
+  margin-right 10px
+.title, .user-name
+  color white
 </style>

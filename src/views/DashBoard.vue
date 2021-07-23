@@ -11,8 +11,10 @@
     </div>
     <div class="right">
       <head-bar v-bind="userInfo"></head-bar>
-      <nav-label />
-      <router-view />
+      <nav-label class="nav-label" />
+      <div class="content">
+        <router-view />
+      </div>
     </div>
   </div>
 </template>
@@ -49,4 +51,11 @@ export default {
 
 .right
   width 100%
+  padding-left 10px
+
+.nav-label
+  margin-top 10px
+
+.content
+  margin-top 10px
 </style>
