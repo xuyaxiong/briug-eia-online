@@ -49,7 +49,7 @@ export default {
       users: [],
       pageInfo: {
         currentPage: 0,
-        pageSize: 10,
+        pageSize: 20,
         total: 0
       }
     }

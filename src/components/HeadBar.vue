@@ -43,10 +43,11 @@ export default {
   justify-content center
   align-items center
   background-color #438eb9
+  position relative
 .user-area
   display flex
   align-items center
-  position fixed
+  position absolute
   right 30px
 .avatar
   width 50px
